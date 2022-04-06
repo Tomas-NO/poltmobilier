@@ -1,0 +1,38 @@
+.nosotros {
+  .nosotros__titulo {
+    @extend .titulo;
+    margin-bottom: 5rem;
+  }
+  .nosotros__contenido {
+    text-align: center;
+    font-family: "Sansita Swashed", cursive;
+    #img1 {
+      grid-area: img1;
+    }
+    #img2 {
+      grid-area: img2;
+    }
+    #p1 {
+      grid-area: p1;
+    }
+    #p2 {
+      grid-area: p2;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .nosotros__contenido {
+    display: grid;
+    grid-template-areas: "img1 img1 p1" "p2 img2 img2";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-row-gap: 4rem;
+    grid-column-gap: 2rem;
+    justify-items: center;
+    font-size: 2.5rem;
+    img {
+      height: 100%;
+    }
+  }
+}

@@ -1,0 +1,107 @@
+footer {
+  margin-top: 10rem;
+  background-color: rgba(0, 0, 0, 0.8) !important;
+  color: white;
+  .footer-arriba {
+    text-align: center;
+    h3 {
+      margin: 0;
+      text-align: center;
+      font-weight: bold;
+    }
+    .menu-footer {
+      padding: 3rem 0;
+      ul {
+        padding: 0;
+      }
+      a {
+        color: $color-blanco;
+        font-size: 2rem;
+        transition: all 0.5s ease;
+      }
+      a:hover {
+        color: $color-principal;
+      }
+    }
+    .newsletter {
+      width: 20rem;
+      text-align: center;
+      margin: 0 auto;
+      p {
+        margin: 1rem;
+      }
+      .newsletter-campos {
+        background-color: rgba(255, 255, 255, 0.1);
+        padding: 1rem;
+        margin-top: 1rem;
+        width: 100%;
+        color: $color-blanco;
+      }
+      .anotarse {
+        margin-top: 2rem !important;
+        transition: all 0.5s ease;
+        width: 100%;
+      }
+      .anotarse:hover {
+        cursor: pointer;
+        background-color: #942c20;
+        color: #dddddd;
+      }
+    }
+    .sigamos-conectados {
+      padding: 4rem 0;
+      .redes-sociales {
+        display: block;
+        margin-top: 2rem;
+      }
+    }
+    .contactos-footer {
+      text-align: center;
+      display: inline-block;
+      margin-top: 2rem;
+      .contacto-footer {
+        display: flex;
+        columns: $color-blanco;
+        i {
+          font-size: 2.5rem;
+        }
+        a {
+          color: $color-blanco;
+          transition: all 0.3s ease;
+          display: flex;
+          flex-direction: column;
+          margin: 0 auto;
+        }
+        a:hover {
+          color: $color-principal;
+        }
+      }
+    }
+  }
+  .copyright {
+    color: rgba(255, 255, 255, 0.4);
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    text-align: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .footer-arriba {
+    padding: 2rem;
+    display: flex;
+    justify-content: space-around;
+    .menu-footer {
+      padding: 0;
+    }
+    .newsletter {
+      margin: 0;
+    }
+    .sigamos-conectados {
+      padding: 0;
+    }
+    .contactos-footer {
+      display: block;
+    }
+  }
+}

@@ -1,0 +1,44 @@
+.items-item {
+  margin: 2rem 0;
+  width: 30rem;
+  list-style: none;
+  a {
+    text-decoration: none;
+    color: black;
+    .items-item-img {
+      width: 100%;
+      height: 32rem;
+    }
+    .items-item-title {
+      text-align: center;
+      font-size: 1.3rem;
+      letter-spacing: 0.2rem;
+      text-transform: uppercase;
+      opacity: 0.9;
+      margin: 1rem 0 0 0;
+      font-weight: normal;
+    }
+    .items-item-title:hover {
+      text-decoration: underline black;
+    }
+    .items-item-title::after {
+      content: "";
+      position: relative;
+      bottom: 0;
+      left: 50%;
+      width: 8rem;
+      margin-left: -4rem;
+      margin-top: 1rem;
+      background: #aaaaaa;
+      display: block;
+      height: 0.2rem;
+    }
+  }
+  .items-item-price {
+    text-align: center;
+    font-size: 1.7rem;
+    margin: 1rem 0 0 0;
+    font-weight: normal;
+    letter-spacing: 0.1rem;
+  }
+}

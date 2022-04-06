@@ -1,0 +1,9 @@
+.items {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  user-select: none;
+  width: 90%;
+  margin: 0 auto;
+  padding: 0 4rem;
+}

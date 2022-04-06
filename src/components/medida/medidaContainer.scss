@@ -1,0 +1,16 @@
+.a-medida {
+  text-align: center;
+  img {
+    width: 70%;
+    margin-top: 5rem;
+  }
+  a {
+    transition: all 0.5s ease;
+  }
+  a:hover {
+    filter: opacity(85%);
+  }
+  .a-medida__titulo {
+    @extend .titulo;
+  }
+}

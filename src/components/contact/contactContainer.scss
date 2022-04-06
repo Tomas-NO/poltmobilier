@@ -1,0 +1,122 @@
+.sector-contacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .sector-contacto__contacto {
+    text-align: center;
+    margin-top: 3rem;
+    height: 15rem;
+    i {
+      font-size: 40px;
+      color: $color-principal;
+    }
+    h3 {
+      text-transform: uppercase;
+      margin-bottom: 2rem;
+    }
+    a {
+      border: 0.2rem solid $color-principal;
+      padding: 1rem;
+      color: $color-principal;
+      transition: all 0.5s ease;
+    }
+    a:hover {
+      background-color: $color-principal;
+      color: white;
+    }
+  }
+  .sector-contacto__contacto:first-of-type {
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .sector-contacto {
+    flex-direction: row;
+    .sector-contacto__contacto {
+      width: 33%;
+      margin: 0;
+    }
+  }
+}
+
+.formulario-contacto {
+  margin: 5rem auto;
+  width: 90%;
+  h3 {
+    border-bottom: 0.2rem solid $color-principal;
+    text-align: center;
+  }
+  input {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    margin-top: 1rem;
+    width: 100%;
+  }
+  .formulario-contacto__forma-de-contacto {
+    display: flex;
+    margin: 2rem 0;
+    p {
+      margin: 0 2rem 0 0;
+    }
+  }
+  #checkbox {
+    width: 2rem;
+    height: 1.5rem;
+    margin: 0;
+  }
+  #mensaje {
+    width: 100%;
+  }
+  #resetear {
+    background-color: #e1e1e1;
+    color: $color-negro;
+    transition: all 0.5s ease;
+  }
+  #resetear:hover {
+    background-color: #c4c4c4;
+  }
+  #enviar {
+    transition: all 0.5s ease;
+  }
+  #enviar:hover {
+    background-color: #942c20;
+    color: white;
+  }
+  .cursor-pointer:hover {
+    cursor: pointer;
+  }
+}
+
+@media (min-width: 768px) {
+  .formulario-contacto {
+    width: 70%;
+  }
+}
+
+.mapa iframe {
+  width: 100%;
+}
+
+.formulario-contacto ::-webkit-input-placeholder {
+  /* WebKit, Blink, Edge */
+  color: #302f2f;
+}
+
+.formulario-contacto:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #302f2f;
+  opacity: 1 /* esto es porque Firefox le reduce la opacidad por defecto */;
+}
+
+.formulario-contacto::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #302f2f;
+  opacity: 1;
+}
+
+.formulario-contacto:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #302f2f;
+}
